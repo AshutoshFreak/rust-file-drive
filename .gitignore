@@ -1,0 +1,23 @@
+/target/
+Cargo.lock
+debug/
+**/*.rs.bk
+
+# Database files
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Environment files
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db

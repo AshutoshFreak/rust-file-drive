@@ -1,0 +1,8 @@
+CREATE TABLE files (
+    id TEXT PRIMARY KEY NOT NULL,
+    filename TEXT NOT NULL,
+    content_type TEXT NOT NULL,
+    size INTEGER NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    data BLOB NOT NULL
+);
