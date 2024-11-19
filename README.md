@@ -28,10 +28,10 @@ cargo install diesel_cli --no-default-features --features sqlite
 Create a .env file in the project root:
 
 ```bash
-echo "DATABASE_URL=sqlite:files.db" > .env
+echo "DATABASE_URL=files.db" > .env
 ```
 
-### **Set Up Database**
+### Set Up Database
 
 ```bash
 # Initialize Diesel
@@ -41,7 +41,7 @@ diesel setup
 diesel migration run
 ```
 
-### **Build and Run the Server**
+### Build and Run the Server
 
 ```bash
 cargo run
@@ -66,7 +66,7 @@ The response will look like:
 }
 ```
 
-## Download a File
+### Download a File
 Using the file ID from the upload response:
 
 ```bash
@@ -109,12 +109,6 @@ CREATE TABLE files (
     data BLOB NOT NULL
 );
 ```
-
-## Error Handling
-
-- If a file is not found, the server returns a 404 status code
-- If no file is provided during upload, a 400 Bad Request is returned
-- Database connection errors will return a 500 Internal Server Error
 
 
 ## Dependencies
